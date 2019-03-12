@@ -2,7 +2,7 @@ import time
 import datetime
 import random
 import win32com.client as wincl
-speak = wincl.Dispatch("SAPI.spVoice")  # startet die speech api
+speak = wincl.Dispatch("SAPI.spVoice")  # starts the windows tts
 speak.Volume = 100
 sd = time.time()
 fd = datetime.datetime.fromtimestamp(sd).strftime('%H')
@@ -12,7 +12,7 @@ while True:
     dr = time.time()
     rd = datetime.datetime.fromtimestamp(dr).strftime('%H')  # unix clock
     print(rd)
-    if fd < rd:  # dieser teil sagt dir die witze
+    if fd < rd:  # jokes starts here ps: you can change them to your langunge
         if gd == 1:
             speak.Speak("Wo leben die meisten Gespenster,In BUHdapest.")
             print(rd)
@@ -40,4 +40,4 @@ while True:
             fd = datetime.datetime.fromtimestamp(sd).strftime('%H')
     print(rd)
     time.sleep(1)
-    tg += 1
+    tg += 1  # btw this is dumb
