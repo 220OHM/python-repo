@@ -3,14 +3,14 @@ import win32com.client as wincl
 speak = wincl.Dispatch("SAPI.spVoice")
 
 
-def hi():
+def hi():  # speaking bits
     ts = ent.get()
     speak.Speak(ts)
 
 
-root = Tk()
-but = Button(root, text="Spreche!", command=hi)
-lab = Label(root, text="Was soll ich sagen.")
+root = Tk()  # GUI bits
+but = Button(root, text="Speak!", command=hi)
+lab = Label(root, text="What should i say?")
 ent = Entry()
 lab.pack()
 ent.pack()
