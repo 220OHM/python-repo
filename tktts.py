@@ -9,6 +9,7 @@ def hi():  # speaking bits
 
 
 root = Tk()  # GUI bits
+root.title("tktts")
 but = Button(root, text="Speak!", command=hi)
 lab = Label(root, text="What should i say?")
 ent = Entry()
