@@ -1,4 +1,4 @@
-x = open("d.txt", "r+")
+x = open("cybernetics.txt", "r+")
 fu = open("21.txt", "r+")
 y = list(x.read())
 z = 0
